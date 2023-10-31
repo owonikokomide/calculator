@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="calculator.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALCULATOR</title>
+  <script src="index.js"></script>
+  <script src="quadratic.js"></script>
+</head>
+<body>
+  <main>
+    <div class="container">
+      
+      <center><p></p></center>
+      <div id="calcutor" >
+      <form name="calculator">
+      <div class="first">
+        <input type="text"  class="number"  name="answer" placeholder="0" >
+      </div>
+      <div class="second">   
+        <div class="ac">
+          <input type="reset" value="AC " class="but up">
+        </div>
+        <div class="plus">
+          <input type="button" class="but up" value="DEL" onclick="calculator.answer.value =calculator.answer.value.substring(0,calculator.answer.value.length -1)">
+        </div>
+        <div class="per">
+          <input type="button" class="but up" value="%" onclick="calculator.answer.value +='%' ">
+        </div>
+        <div class="division">
+          <input type="button" class="buts" value="&#xf7" onclick="calculator.answer.value +='/' ">
+        </div>
+      </div>
+      <div class="third">
+        <div class="seven">
+          <input type="button" class="but" value="7" onclick="calculator.answer.value +='7' ">
+        </div>
+        <div class="eight">
+          <input type="button" class="but" value="8" onclick="calculator.answer.value +='8'">
+        </div>
+        <div class="nine">
+          <input type="button" class="but" value="9" onclick="calculator.answer.value +='9'">
+        </div>
+        <div class="mul">
+          <input type="button" class="buts" value="x" onclick="calculator.answer.value +='*'">
+        </div>
+      </div>
+      <div class="fourth">
+        <div class="four">
+          <input type="button" class="but" value="4" onclick="calculator.answer.value +='4'">
+        </div>
+        <div class="five">
+          <input type="button" class="but" value="5" onclick="calculator.answer.value +='5'">
+        </div>
+        <div class="six">
+          <input type="button" class="but" value="6" onclick="calculator.answer.value +='6'">
+        </div>
+        <div class="sub">
+          <input type="button" class="buts" value="-" onclick="calculator.answer.value +='-'">
+        </div>
+      </div>
+      <div class="fifth">
+        <div class="one">
+          <input type="button" class="but" value="1" onclick="calculator.answer.value +='1'">
+        </div>
+        <div class="two">
+          <input type="button" class="but" value="2" onclick="calculator.answer.value +='2'">
+        </div>
+        <div class="three">
+          <input type="button" class="but" value="3" onclick="calculator.answer.value +='3'">
+        </div>
+        <div class="add">
+          <input type="button" class="buts" value="+" onclick="calculator.answer.value +='+'">
+        </div>
+      </div>
+      <div class="sixth">
+        <div class="zero">
+          <input type="button" class="butss" value="0" onclick="calculator.answer.value +='0'">
+        </div>
+        <div class="dot">
+          <input type="button" class="but" value="." onclick="calculator.answer.value +='.'">
+        </div>
+        <div class="equal">
+          <input type="button" class="buts" value="=" onclick=" calculator.answer.value= eval(calculator.answer.value)">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="quadratic" id="quadratic" style="display:none;">
+
+    <input type="text"  id="a" class="input" placeholder="enter value for a">
+    <input type="text"  id="b" class="input" placeholder="enter value for b">
+    <input type="text"  id="c" class="input" placeholder="enter value for c">
+    <h5 style="color: white; font-size: 1.4rem;"> x = <span id="x1"></span> 
+    </h5>
+    <h6 style="color: white; font-size: 1.4rem;"> OR </h6>
+    <h5 style="color: white; font-size: 1.4rem;">x = <span id="x2"></span> </h5>
+    <button type="button" onclick="calculate()" 
+      style="border-radius : 1rem; color: white;">SOLVE</button>
+  </div>
+      <center id="btns">
+         <button title="quadratic" ondblclick="bringquad()"></button>
+     </center>  
+  </div>
+  </main>
+</body>
+</html> 
