@@ -10,7 +10,7 @@ function calculate(){
       
       ) 
     
-    ))/ (2*a);
+    ))/ (2*a); 
   
     var x2 = (-b - ((Math.sqrt(  
       (
