@@ -4,7 +4,7 @@ function bringquad(){
 document.getElementById('btns').innerHTML = '<button title="calculator" ondblclick="bringcalc()"></button>'
  
 
-} 
+}  
 
 function bringcalc(){
   document.getElementById('quadratic').style.display="none";
