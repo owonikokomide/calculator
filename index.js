@@ -1,7 +1,7 @@
 function bringquad(){
   document.getElementById('quadratic').style.display="block";
   document.getElementById('calcutor').style.display="none";
-document.getElementById('btns').innerHTML = '<button title="calculator" ondblclick="bringcalc()"></button>'
+document.getElementById('btns').innerHTML = '<button title="calculator" ondblclick="bringcalc()"></button>' 
  
 
 }  
