@@ -6,7 +6,7 @@ function calculate(){
   // alert(a);
   var x1 = (-b + Math.sqrt(  
     (
-      Math.pow(b, 2)- (4 * a * c)
+      Math.pow(b, 2)- (4 * a * c) 
       
       ) 
     
